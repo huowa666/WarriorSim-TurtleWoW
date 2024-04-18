@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width">
-  <title>TWoW Warrior DPS Sim</title>
+  <title>乌龟战士输出模拟</title>
 
   <link rel="icon" type="image/x-icon" href="/WarriorSim-TurtleWoW/favicon.ico">
   <link href="dist/css/theme.default.min.css" rel="stylesheet">
@@ -53,7 +53,7 @@
     <div class="tabs">
       <a href="https://guybrushgit.github.io/WarriorSim/classic.html" class="btn js-classic">Classic</a>
       <a href="https://guybrushgit.github.io/WarriorSim/" class="btn js-sod">SoD</a>
-      <a href="turtle.html" class="btn js-turtle active">Turtle</a>
+      <a href="turtle.html" class="btn js-turtle active">乌龟服</a>
     </div>
     
     <div class="bg"></div>
@@ -63,19 +63,19 @@
 
       <ul>
         <li>
-          <label>Attack Power</label>
+          <label>攻击强度</label>
           <span id="ap"></span>
         </li>
         <li>
-          <label>Strength</label>
+          <label>力量</label>
           <span id="str"></span>
         </li>
         <li>
-          <label>Agility</label>
+          <label>敏捷</label>
           <span id="agi"></span>
         </li>
         <li>
-          <label>Hit</label>
+          <label>命中</label>
           <span id="hit"></span>
         </li>
         <li>
@@ -83,11 +83,11 @@
           <span id="skill"></span>
         </li>
         <li>
-          <label>Miss</label>
+          <label>未命中</label>
           <span id="miss"></span>
         </li>
         <li>
-          <label>Crit</label>
+          <label>暴击率</label>
           <span id="crit"></span>
         </li>
         <li>
@@ -99,35 +99,35 @@
           <span id="dmgmod"></span>
         </li>
         <li>
-          <label>Armor Pen</label>
+          <label>护甲穿透</label>
           <span id="arp"></span>
         </li>
         <li>
-          <label>Haste</label>
+          <label>急速</label>
           <span id="haste"></span>
         </li>
         <li class="shadow-resist hidden">
-          <label>Shadow Resist</label>
+          <label>暗抗</label>
           <span id="shadow-resist"></span>
         </li>
         <li class="arcane-resist hidden">
-          <label>Arcane Resist</label>
+          <label>奥抗</label>
           <span id="arcane-resist"></span>
         </li>
         <li class="nature-resist hidden">
-          <label>Nature Resist</label>
+          <label>自抗</label>
           <span id="nature-resist"></span>
         </li>
         <li class="frost-resist hidden">
-          <label>Frost Resist</label>
+          <label>冰抗</label>
           <span id="frost-resist"></span>
         </li>
         <li class="fire-resist hidden">
-          <label>Fire Resist</label>
+          <label>火抗</label>
           <span id="fire-resist"></span>
         </li>
         <li>
-          <label>Sets</label>
+          <label>套装</label>
           <span id="sets"></span>
         </li>
       </ul>
@@ -178,7 +178,7 @@
         <label class="active">Settings</label>
         <ul>
           <li>
-            <label>Level</label>
+            <label>等级</label>
             <input type="range" name="slider-level" min="1" max="60" value="60" class="slider">
             <input type="text" name="level" value="60" data-numberonly="true">
           </li>
@@ -188,7 +188,7 @@
             <input type="text" name="targetlevel" value="63" data-numberonly="true">
           </li>
           <li>
-            <label>Race</label>
+            <label>种族</label>
             <select dir="rtl" name="race">
               <option value="Human">Human</option>
               <option value="Dwarf">Dwarf</option>
@@ -309,7 +309,7 @@
       <article class="filter">
         <label class="active">Gear Filter</label>
         <ul class="sources">
-          <li data-id="quest">Quest</li>
+          <li data-id="quest">任务</li>
           <li data-id="crafting">Crafting</li>
           <li data-id="dungeon">Dungeon</li>
           <li data-id="onyxia">Onyxia</li>
@@ -368,7 +368,7 @@
           <li data-id="4" data-sources="zg">P4</li>
           <li data-id="5" data-sources="aq20,aq40">P5</li>
           <li data-id="6" data-sources="naxx">P6</li>
-          <li data-id="7" data-sources="scitadel,emersanc,lowerkara,unknown">TWoW</li>
+          <li data-id="7" data-sources="scitadel,emersanc,lowerkara,unknown">乌龟专属</li>
         </ul>
       </article>
 
@@ -468,7 +468,7 @@
     <div class="button-container">
       <a href="#" class="btn js-editmode">SHOW / HIDE ROWS</a>
       <a href="#" class="btn js-enchant">ENCHANTS DPS</a>
-      <a href="#" class="btn js-table">GEAR DPS</a>
+      <a href="#" class="btn js-table">装备 DPS</a>
       <a href="#" class="btn js-export">EXPORT PROFILE</a>
       <a href="#" class="btn js-import">IMPORT PROFILE</a>
     </div>
